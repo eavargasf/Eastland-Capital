@@ -86,3 +86,19 @@ button:hover {
   /* Style the button on hover */
   background-color: #ddd;
 }
+.ticker-container {
+  width: 100%; /* Adjust width as needed */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-text {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); } /* Adjust distance for full text reveal */
+}
+
